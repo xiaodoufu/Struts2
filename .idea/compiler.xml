@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01BaseAction" />
+        <module name="02Struts2Base" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01BaseAction" target="1.5" />
+      <module name="02Struts2Base" target="1.5" />
       <module name="Struts2" target="1.5" />
     </bytecodeTargetLevel>
   </component>

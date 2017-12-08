@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+     <package name="default"  namespace="/" extends="struts-default">
+         <!--第一种方式  普通类-->
+            <action name="helloAction1"  class="com.xdf.action.HelloAction1" method="execute">
+                 <result name="success">/success.jsp</result>
+            </action>
+         <!--第二种方式  普通类实现Action-->
+            <action name="helloAction2"  class="com.xdf.action.HelloAction2" method="execute">
+                 <result name="success">/success.jsp</result>
+            </action>
+         <!--第三种方式  普通类继承ActionSupport-->
+            <action name="helloAction3"  class="com.xdf.action.HelloAction3" method="execute">
+                 <result name="success">/success.jsp</result>
+            </action>
+     </package>
+
+</struts>
