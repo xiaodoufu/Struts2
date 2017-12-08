@@ -3,7 +3,23 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+    <!--
+    name： 包名：必须是唯一的！自定义！为了其他包 继承！
+    namespace：命名空间！ 可选项，不写默认是"/",从项目的跟路径开始
+    extends：继承  需要继承的package的name属性名
+          务必继承  struts-default
+
+   action
+       name: 用户访问的路径，和namespace连用
+       class:执行代码的全类名
+       method:执行的方法  不写默认是execute
+
+   result
+       name:后台返回的字符串，默认值是success
+       type:默认是转发
+    -->
      <package name="default"  namespace="/" extends="struts-default">
+
          <!--第一种方式  普通类-->
             <action name="helloAction1"  class="com.xdf.action.HelloAction1" method="execute">
                  <result name="success">/success.jsp</result>
