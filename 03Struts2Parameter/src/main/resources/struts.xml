@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+    <!--
+     default.properties文件中的设置
+
+    01.struts2的默认扩展名是 action或者什么都没有
+    struts.action.extension=action,,
+    我们可以根据自己的需求去更改
+    <constant name="struts.action.extension" value="haha,heihei,xiaodoufu,,"/>
+
+   02.struts.devMode = true  设置开发模式
+   - struts.i18n.reload = true  国际化
+   - struts.configuration.xml.reload = true   不需要重启
+      修改xml文件的时候，就不需要重启服务了！
+      001.开发模式   代码编辑阶段
+      002.生产模式   项目发布 上线
+
+    -->
+    <constant name="struts.devMode" value="true"/>
+     <package name="default"  namespace="/user" extends="struts-default">
+         <!--三种方式 就不书写多个action了，只需要更改class的名称即可-->
+          <action name="login"  class="com.xdf.action.HelloAction3" method="login">
+             <!-- type="redirect"  重定向 默认是转发 dispatcher-->
+              <result name="success" type="redirect">/success.jsp</result>
+          </action>
+     </package>
+
+</struts>
