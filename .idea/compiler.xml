@@ -9,12 +9,14 @@
         <module name="01BaseAction" />
         <module name="02Struts2Base" />
         <module name="03Struts2Parameter" />
+        <module name="04Struts2Dynamic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01BaseAction" target="1.5" />
       <module name="02Struts2Base" target="1.5" />
       <module name="03Struts2Parameter" target="1.5" />
+      <module name="04Struts2Dynamic" target="1.5" />
       <module name="Struts2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
