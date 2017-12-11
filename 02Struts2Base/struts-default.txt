@@ -96,12 +96,9 @@
                 <interceptor-ref name="debugging"/>
                 <interceptor-ref name="deprecation"/>
             </interceptor-stack>
-
-           
-
        </interceptors>
-        <!-- 默认执行的拦截器栈  defaultStack-->
 
+        <!-- 默认执行的拦截器栈  defaultStack-->
         <default-interceptor-ref name="defaultStack"/>
           <!-- 默认执行的类-->
         <default-class-ref class="com.opensymphony.xwork2.ActionSupport" />

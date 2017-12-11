@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01BaseAction/01BaseAction.iml" filepath="$PROJECT_DIR$/01BaseAction/01BaseAction.iml" />
       <module fileurl="file://$PROJECT_DIR$/02Struts2Base/02Struts2Base.iml" filepath="$PROJECT_DIR$/02Struts2Base/02Struts2Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03Struts2Parameter/03Struts2Parameter.iml" filepath="$PROJECT_DIR$/03Struts2Parameter/03Struts2Parameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts2.iml" filepath="$PROJECT_DIR$/Struts2.iml" />
     </modules>
   </component>

@@ -8,6 +8,7 @@
   <modules>
     <module>01BaseAction</module>
       <module>02Struts2Base</module>
+      <module>03Struts2Parameter</module>
   </modules>
   <name>Struts2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
