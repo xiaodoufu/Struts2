@@ -2,7 +2,7 @@ package com.xdf.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class UserAction  extends ActionSupport{
+public class UserAction  extends ActionSupport{  //动态方法调用需要的action
 
     public  String add(){
         System.out.println("进入了 用户的 add");

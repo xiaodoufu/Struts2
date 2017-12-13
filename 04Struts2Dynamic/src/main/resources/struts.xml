@@ -7,11 +7,46 @@
     <constant name="struts.devMode" value="true"/>
     <!--开启动态方法调用-->
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+     <!--动态方法调用  需要的 package
      <package name="default"  namespace="/user" extends="struts-default">
         <action name="users" class="com.xdf.action.UserAction">
            <result>/success.jsp</result>
         </action>
+     </package>-->
 
-     </package>
+
+    <!--通配符
+    <a href="book/BookAction_add">新增图书</a>
+     如果我们想使用通配符，必须命名要规范
+     *：就是通配符
+     ｛0｝：代表整个通配符  *_*
+     ｛1｝：代表通配符中的第一个子串
+     ｛2｝：代表通配符中的第二个子串
+
+
+
+
+
+
+    -->
+    <package name="default"  namespace="/book" extends="struts-default">
+       <!-- <action name="*_*" class="com.xdf.action.{1}" method="{2}">
+            <result>/success.jsp</result>
+            <result  name="{2}">/success.jsp</result>
+            <result  name="delSuccess">/success.jsp</result>
+        </action>-->
+        <!--验证精确匹配 优先于 通配符-->
+        <action name="BookAction_add" class="com.xdf.action.BookAction" method="delete">
+            <result>/success.jsp</result>
+        </action>
+
+        <!--验证｛0｝ 代表整个通配符  BookAction_update  -->
+        <action name="*_*" class="com.xdf.action.{1}" method="{0}">
+            <result>/success.jsp</result>
+            <result  name="addSuccess">/success.jsp</result>
+            <result  name="delSuccess">/success.jsp</result>
+        </action>
+    </package>
+
 
 </struts>
