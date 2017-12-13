@@ -10,6 +10,7 @@
         <module name="02Struts2Base" />
         <module name="03Struts2Parameter" />
         <module name="04Struts2Dynamic" />
+        <module name="05Struts2ServletAPI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="02Struts2Base" target="1.5" />
       <module name="03Struts2Parameter" target="1.5" />
       <module name="04Struts2Dynamic" target="1.5" />
+      <module name="05Struts2ServletAPI" target="1.5" />
       <module name="Struts2" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+    <!--开启动态方法调用-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+     <package name="default"  namespace="/user" extends="struts-default">
+         <!-- 我们直接在浏览器中输入 user/login-->
+        <action name="login" class="com.xdf.action.UserAction2" method="login">
+           <result>/success.jsp</result>
+        </action>
+     </package>
+</struts>

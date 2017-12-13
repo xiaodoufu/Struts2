@@ -10,6 +10,7 @@
       <module>02Struts2Base</module>
       <module>03Struts2Parameter</module>
       <module>04Struts2Dynamic</module>
+      <module>05Struts2ServletAPI</module>
   </modules>
   <name>Struts2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
