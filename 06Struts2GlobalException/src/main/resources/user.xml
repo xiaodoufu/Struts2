@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+    <package name="user" namespace="/user" extends="default">
+        <action name="*_*" class="com.xdf.action.{1}" method="{2}">
+            <result name="success">/success.jsp</result>
+            <!-- <result name="sqlError">/sqlerror.jsp</result>
+             <result name="nullError">/sqlerror.jsp</result>-->
+            <!--
+              一个package中会有很多action
+              不可能每个action中都去书写重复的异常处理代码
+                <exception-mapping exception="java.sql.SQLException" result="sqlError"/>
+            -->
+        </action>
+    </package>
+
+</struts>

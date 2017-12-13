@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+     <package name="default"  namespace="/" extends="struts-default">
+         <!--全局返回结果配置 -->
+         <global-results>
+             <result name="sqlError">/sqlerror.jsp</result>
+             <result name="nullError">/nullerror.jsp</result>
+         </global-results>
+
+         <!--全局异常结果的配置    只要是我们的action中抛出了异常就会在下面的配置中查询有没有对应的exception
+           有就找对应的result-->
+         <global-exception-mappings>
+             <exception-mapping exception="java.sql.SQLException" result="sqlError"></exception-mapping>
+             <exception-mapping exception="java.lang.NullPointerException" result="nullError"></exception-mapping>
+         </global-exception-mappings>
+     </package>
+
+    <!--关联其他的xml文件-->
+    <include file="user.xml"/>
+</struts>
