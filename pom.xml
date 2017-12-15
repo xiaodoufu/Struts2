@@ -12,6 +12,7 @@
       <module>04Struts2Dynamic</module>
       <module>05Struts2ServletAPI</module>
       <module>06Struts2GlobalException</module>
+      <module>07Struts2Validate</module>
   </modules>
   <name>Struts2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
