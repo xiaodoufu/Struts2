@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+     <package name="default"  namespace="/user" extends="struts-default">
+          <action name="login" class="com.xdf.action.UserAction" method="login">
+              <!--重定向到另外一个Namespace下的action-->
+             <result name="success" type="redirectAction">
+                 <param name="namespace">/interceptor</param>
+                 <param name="actionName">login</param>
+             </result>
+          </action>
+     </package>
+    <include file="user.xml"/>
+</struts>

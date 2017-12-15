@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/05Struts2ServletAPI/05Struts2ServletAPI.iml" filepath="$PROJECT_DIR$/05Struts2ServletAPI/05Struts2ServletAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/06Struts2GlobalException/06Struts2GlobalException.iml" filepath="$PROJECT_DIR$/06Struts2GlobalException/06Struts2GlobalException.iml" />
       <module fileurl="file://$PROJECT_DIR$/07Struts2Validate/07Struts2Validate.iml" filepath="$PROJECT_DIR$/07Struts2Validate/07Struts2Validate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08Struts2Interceptor/08Struts2Interceptor.iml" filepath="$PROJECT_DIR$/08Struts2Interceptor/08Struts2Interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Struts2.iml" filepath="$PROJECT_DIR$/Struts2.iml" />
     </modules>
   </component>

@@ -13,6 +13,7 @@
       <module>05Struts2ServletAPI</module>
       <module>06Struts2GlobalException</module>
       <module>07Struts2Validate</module>
+      <module>08Struts2Interceptor</module>
   </modules>
   <name>Struts2 Maven Webapp</name>
   <url>http://maven.apache.org</url>
