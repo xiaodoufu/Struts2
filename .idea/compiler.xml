@@ -14,6 +14,7 @@
         <module name="06Struts2GlobalException" />
         <module name="07Struts2Validate" />
         <module name="08Struts2Interceptor" />
+        <module name="09Struts2Upload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="06Struts2GlobalException" target="1.5" />
       <module name="07Struts2Validate" target="1.5" />
       <module name="08Struts2Interceptor" target="1.5" />
+      <module name="09Struts2Upload" target="1.5" />
       <module name="Struts2" target="1.5" />
     </bytecodeTargetLevel>
   </component>
